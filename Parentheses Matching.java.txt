@@ -1,0 +1,32 @@
+import java.util.Stack;
+
+//Parentheses Matching in Expressions
+public class Matching {
+
+
+    public static void main(String[] args){
+
+
+        String parentheses = " ( ) ";
+
+
+        Stack<String> checkingBalance = new Stack<>();
+
+        checkingBalance.push(parentheses);
+
+        System.out.println(" "+checkingBalance.toString());
+
+
+        if(checkingBalance.peek().equals(" ( ) ")){
+
+            System.out.println("parentheses are correctly balanced  ");
+        }
+        else {
+
+            System.out.println("parentheses are not balanced");
+        }
+
+
+    }
+
+}
